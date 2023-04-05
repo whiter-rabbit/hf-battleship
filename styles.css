@@ -1,0 +1,36 @@
+body {
+    background: gray;
+}
+
+div.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+figure {
+    height: 320px;
+    width: 320px;
+    display: flex;
+}
+
+figure img{
+    height: 300px;
+    width: 300px; 
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img:hover {
+    height: 310px;
+    width: 310px; 
+    filter: none;
+
+}
